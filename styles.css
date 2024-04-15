@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Helvetica; 
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+/* makes Flex universal to container divs */
+.container {
+    display: flex;
+}
+
+/* relates to the navbar and logo section */
+nav {
+    border-bottom: 1px solid seashell;
+    position: sticky;
+    height: 69px;
+    opacity: 75%;
+}
+
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 10px;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin-right: 15px;
+    color: seashell;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* header section */
+.hero {
+    background: no-repeat url(../images/img-mission-background.jpeg);
+    background-position: center;
+    height: 700px;
+    width: auto;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission-statement {
+    background-color: black;
+    width: 1200px;
+    justify-content: space-between;
+    min-height: 100px;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+/* Tea of the month */
+.tea-of-the-month {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.ToM-text {
+    max-width: 1000px;
+    min-height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.ToM-text h2 {
+    margin-bottom: 20px;
+}
+
+.ToM-item-group {
+    max-width: 1000px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.ToM-item {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.ToM-item img {
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}
+
+/* Locations */
+.locations {
+    min-height: 500px;
+    background: no-repeat url(../images/img-locations-background.jpeg);
+    justify-content: center;
+    max-width: 1200px;
+    background-position: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.locations-item-group {
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.locations-item {
+    flex-direction: column;
+    background-color: black;
+    margin-right: 40px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+/* footer */
+
+.footer-card {
+    height: 200px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer-card h2 {
+    margin-bottom: 40px;
+}
+
+.footer-card h5 {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    margin-left: 20px;
+}
